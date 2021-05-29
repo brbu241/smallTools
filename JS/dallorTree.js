@@ -1,4 +1,17 @@
-let getPlace = document.getElementById("dollarTree");
+let getPlace = document.getElementById("dollarTree"),
+    signInput = document.getElementById("sign"),
+    layerInput = document.getElementById("layer"),
+    submitBtn = document.querySelector(".submitBtn");
+
+function FsubmitBtn(value) {
+  let getSign = signInput.value,
+      getLayer = layerInput.value;
+  //alert("了解，是"+getlayer+"的"+getSign);
+  let result = dollarLayer(getSign,getLayer);
+  getPlace.innerHTML = result;
+}
+
+submitBtn.addEventListener("click", FsubmitBtn);
 
 function dollarLayer (sign,layers){
     let output = "";
@@ -10,7 +23,4 @@ function dollarLayer (sign,layers){
         output = output + signs + "<br>";
     }
     return output;
-};
-let a = dollarLayer("塔",9);
-
-getPlace.innerHTML = a;
+}
