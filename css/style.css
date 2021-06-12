@@ -1,0 +1,21 @@
+body{
+    background: rgb(32, 33, 77);
+    color: white;
+    font-family:'Noto Serif TC', sans-serif;
+}
+
+p{
+    font-family:'Noto Sans TC', sans-serif;
+}
+
+a{
+    color:rgb(102, 250, 34)
+}
+
+/* .img{
+    max-width: 800px;
+} */
+
+img{
+    max-width: 100%;
+}
