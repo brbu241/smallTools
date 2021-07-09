@@ -1,0 +1,13 @@
+h1#head1 + img{
+    width: 50%;   
+}
+
+form{
+    font-size: 20px;
+}
+
+button{
+    font-size: 1em;
+    padding: 0 0.75em;
+    border-radius: 1em;
+}

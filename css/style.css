@@ -2,6 +2,7 @@ body{
     background: rgb(32, 33, 77);
     color: white;
     font-family:'Noto Serif TC', sans-serif;
+    padding: 0 25%;
 }
 
 p{
@@ -9,9 +10,15 @@ p{
 }
 
 a{
-    color:rgb(102, 250, 34)
+    color:rgb(102, 250, 34);
 }
+
+a:hover{
+    color:rgb(182, 37, 37);
+}
+
 
 img{
     max-width: 100%;
+    /* padding: 0 25%; */
 }

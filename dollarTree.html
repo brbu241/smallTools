@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dollor Tree</title>
 </head>
-<body>
-    <label>請輸入想要幾層的什麼：
-        <input type="text" id="sign" placeholder="什麼東西" />
-        <input type="text" id="layer" placeholder="層數" />
-        <button class="submitBtn">送出</button>
-    </label>
 
-    <div id="dollarTree" style = text-align:center></div>
-    <script src="JS/dallorTree.js"></script>
-    <!-- <script>
-        document.getElementById("dollarTree").innerHTML="New text!";
-    </script> -->
+<body>
+    <form action="" id="makeTreeForm">
+        <h1>歡迎來做塔：</h1>
+        <div>
+            <label for="sign">請輸入想要什麼塔：</label>
+            <input type="text" id="sign" name="sign" placeholder="什麼東西" />
+        </div>
+        <div>
+            <label for="layer">請輸入幾層：</label>
+            <input type="number" name="layer" id="layer" placeholder="層數" />
+        </div>
+        <button class="submitBtn">送出</button>
+    </form>
+
+    <div id="dollarTree" style=text-align:center>塔會蓋在這邊</div>
+    <script src="./JS/dallorTree.js"></script>
+
 </body>
+
 </html>

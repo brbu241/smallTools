@@ -1,26 +1,26 @@
-let getPlace = document.getElementById("dollarTree"),
-    signInput = document.getElementById("sign"),
-    layerInput = document.getElementById("layer"),
-    submitBtn = document.querySelector(".submitBtn");
+const makeTreeForm = document.querySelector('#makeTreeForm');
+const getPlace = document.querySelector("#dollarTree");
 
-function FsubmitBtn(value) {
-  let getSign = signInput.value,
-      getLayer = layerInput.value;
-  //alert("了解，是"+getlayer+"的"+getSign);
-  let result = dollarLayer(getSign,getLayer);
-  getPlace.innerHTML = result;
+makeTreeForm.addEventListener("submit", makeTree);
+
+function makeTree(e) {
+    e.preventDefault();
+    let getSign = this.elements.sign.value,
+        getLayer = this.elements.layer.value;
+    //alert(`了解，是${getLayer}的${getSign}`);
+    getPlace.innerHTML = dollarLayer(getSign, getLayer);
+
 }
 
-submitBtn.addEventListener("click", FsubmitBtn);
-
-function dollarLayer (sign,layers){
+function dollarLayer(sign, layers) {
     let output = "";
-        for (let i = 0; i < layers; i++){
-        signs =""
-        for (let j = 0; j < i+1; j++){
+    for (let i = 0; i < layers; i++) {
+        signs = ""
+        for (let j = 0; j < i + 1; j++) {
             signs = signs + sign;
         }
-        output = output + signs + "<br>";
+        output += (signs + "<br>");
     }
     return output;
 }
+
