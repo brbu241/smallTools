@@ -1,12 +1,13 @@
 const makeTreeForm = document.querySelector('#makeTreeForm');
 const getPlace = document.querySelector("#dollarTree");
+const submitBtn = document.querySelector("#submitBtn");
 
-makeTreeForm.addEventListener("submit", makeTree);
+submitBtn.addEventListener("click", makeTree);
 
 function makeTree(e) {
     e.preventDefault();
-    let getSign = this.elements.sign.value,
-        getLayer = this.elements.layer.value;
+    let getSign = makeTreeForm.elements.sign.value,
+        getLayer = makeTreeForm.elements.layer.value;
     //alert(`了解，是${getLayer}的${getSign}`);
     getPlace.innerHTML = dollarLayer(getSign, getLayer);
 
