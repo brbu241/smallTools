@@ -16,7 +16,7 @@ function makeTree(e) {
 function dollarLayer(sign, layers) {
     let output = "";
     for (let i = 0; i < layers; i++) {
-        signs = ""
+        let signs = "";
         for (let j = 0; j < i + 1; j++) {
             signs = signs + sign;
         }
