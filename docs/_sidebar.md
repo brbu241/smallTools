@@ -1,6 +1,4 @@
-- [首頁](/)
-- 快速開始
-  - [快速開始](quickstart.md)
-- 指南
-  - [安裝](guide/install.md)
-  - [配置](guide/config.md)
+<!-- docs/_sidebar.md -->
+
+* [Home](/)
+* [Guide](guide.md)
